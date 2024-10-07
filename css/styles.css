@@ -101,8 +101,8 @@ body {
 }
 
 .logo {
-    width: 5vh;
-    height: 5vh;
+    width: 5rem;
+    height: 5rem;
 }
 
 .menu {
@@ -327,17 +327,22 @@ p.description {
 
 /* ---------------------------------------------------------------------- */
 /* POYECTOS */
-.main-projects{
+.main-projects {
     flex-direction: column;
 }
-.projects-container{
+
+.projects-container {
     align-items: center;
     justify-content: center;
     flex-direction: column;
 
     top: 0;
 }
-.projects-p{
+abbr[title] {
+    text-decoration: underline solid;
+}
+
+.projects-p {
     width: 100%;
 
     font-size: 1.6rem;
@@ -346,7 +351,8 @@ p.description {
 
     padding: 1rem 0;
 }
-.carousel-section{
+
+.carousel-section {
     width: 100%;
     height: 80%;
 
@@ -356,7 +362,7 @@ p.description {
     flex-direction: column;
 }
 
-.carousel-container{
+.carousel-container {
     width: 95%;
     height: 100%;
 
@@ -370,7 +376,8 @@ p.description {
 
     padding: 8px 0;
 }
-.carousel-container>button{
+
+.carousel-container>button {
     width: 7vw;
     height: 7vw;
 
@@ -386,14 +393,16 @@ p.description {
 
     cursor: pointer;
 }
-.prev{
+
+.prev {
     left: 15vw;
 }
-.next{
+
+.next {
     right: 15vw;
 }
 
-.carousel{
+.carousel {
     width: 90%;
     height: 100%;
 
@@ -401,7 +410,9 @@ p.description {
     align-items: center;
     justify-content: center;
 }
-.projects-p, .carousel-section{
+
+.projects-p,
+.carousel-section {
     position: relative;
     top: 2rem;
 }
@@ -410,7 +421,7 @@ p.description {
 .carousel>.carousel-item {
     width: 100%;
     height: 100%;
-    
+
     background-color: var(--color-background);
     text-align: center;
 
@@ -419,11 +430,13 @@ p.description {
     /* Oculta todos los items por defecto */
     display: none;
 }
-.project-title{
+
+.project-title {
     font-size: 3rem;
     color: var(--color-secundario);
 }
-.carousel-item>.link-project{
+
+.carousel-item>.link-project {
     width: 50%;
     height: 100%;
 
@@ -431,7 +444,8 @@ p.description {
 
     overflow: hidden;
 }
-.link-project img{
+
+.link-project img {
     width: 50%;
     height: calc((100% / 11) * 8);
 
@@ -442,31 +456,38 @@ p.description {
 
     transition: all ease-in-out 0.3s;
 }
-.link-project img:hover{
+
+.link-project img:hover {
     transform: scale(1.02);
 
     transition: all ease-in-out 0.3s;
 }
-.project-des{
+
+.project-des {
     font-size: 1.6rem;
     color: var(--color-principal);
 }
+
 .carousel-item>.project-title,
-.carousel-item>.project-des{
+.carousel-item>.project-des {
     height: calc((100%/11 * 1));
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.carousel-item>*{
+
+.carousel-item>* {
     position: relative;
     top: 1rem;
 }
+
 /* ---------------------------------------------------------------------- */
 /* ABOUT ME */
 .main-aboutme {
     flex-direction: column;
+
+    overflow: hidden;
 }
 
 .aboutme-title {}
@@ -697,7 +718,7 @@ p.description {
     opacity: 0;
     visibility: hidden;
 
-    left: 50vw;
+    left: 100vw;
 }
 
 .techs.move {
@@ -714,6 +735,7 @@ p.description {
 
     position: absolute;
     top: 50%;
+    right: -8rem;
 
     transform: translateY(-50%);
 
@@ -726,8 +748,6 @@ p.description {
 }
 
 .right {
-    right: 0;
-
     opacity: 1;
     visibility: visible;
 
@@ -741,8 +761,6 @@ p.description {
 
 
 .left {
-    left: -10%;
-
     display: block;
 }
 
@@ -751,25 +769,25 @@ p.description {
 }
 
 .aboutme-photo>*,
-.aboutme-info>*{
+.aboutme-info>* {
     position: relative;
     top: -7.5vh;
 }
-.aboutme-photo img{
+
+.aboutme-photo img {
     width: 55%;
 }
 
 
 /* ---------------------------------------------------------------------- */
 /* CONTACTO */
-.main-contact{
-    
-}
-.contact-container{
+.main-contact {}
+
+.contact-container {
     top: 0;
 }
 
-.contact-form{
+.contact-form {
     width: 55%;
     height: 80%;
 
@@ -781,7 +799,8 @@ p.description {
     border: solid var(--color-secundario) 0.35rem;
     border-radius: 50px;
 }
-.contact-form > *{
+
+.contact-form>* {
     width: 100%;
     height: calc(100% / 6);
 
@@ -792,6 +811,7 @@ p.description {
 
     padding: 2rem;
 }
+
 .form-group {
     display: flex;
     align-items: start;
@@ -801,7 +821,8 @@ p.description {
 
     padding: 0 2.5rem 0 2.5rem;
 }
-.name-fields{
+
+.name-fields {
     width: 100%;
     display: flex;
     align-items: center;
@@ -810,19 +831,21 @@ p.description {
 
     gap: 2rem;
 }
-.form-group>label{
+
+.form-group>label {
     display: block;
     font-size: 1.4rem;
     font-weight: bold;
     margin-bottom: 0.15rem;
 }
+
 .name-fields>input[type="text"],
 .form-group>input[type="text"],
 .form-group>input[type="email"],
 .form-group>input[type="tel"],
 .form-group>textarea {
     width: 100%;
-    
+
     border: solid var(--color-principal) 2px;
     border-radius: 15px;
     font-size: 1rem;
@@ -838,14 +861,17 @@ p.description {
     border-color: var(--color-secundario);
     outline: none;
 }
-.contact-form>.form-message{
+
+.contact-form>.form-message {
     height: calc((100% / 6) *2);
 }
-.form-message>.message{
+
+.form-message>.message {
     height: 80%;
+    resize: none;
 }
 
-button[type="submit"]{
+button[type="submit"] {
     width: 50%;
     height: 4rem;
 
@@ -858,6 +884,7 @@ button[type="submit"]{
 
     transform: translateX(-50%);
 }
+
 .contact-form>button {
     background-color: var(--color-principal);
     color: var(--color-background);
@@ -874,6 +901,7 @@ button[type="submit"]{
 .contact-form>button:hover {
     background-color: var(--color-secundario);
 }
+
 /* ---------------------------------------------------------------------- */
 /* FOOTER */
 .footer {
@@ -975,12 +1003,275 @@ button[type="submit"]{
 }
 
 /* RESPONSIVE */
-@media (min-width: 1601px) and (max-width: 1920px) {}
+@media (min-width: 1681px) and (max-width: 1920px) {
+    /* MAIN */
+    .image-space {
+        width: 100%;
+    }
 
-@media (min-width: 1025px) and (max-width: 1600px) {}
+    .pres-title {
+        font-size: 3rem;
+        text-wrap: balance;
+    }
 
-@media (min-width: 769px) and (max-width: 1024px) {}
+    .pres-subtitle {
+        font-size: 2.3rem;
+    }
+}
 
-@media (min-width: 551px) and (max-width: 768px) {}
+@media screen and (max-width: 1680px) {
+    .title{
+        font-size: 2.2rem;
+    }
+    /* HEADER */
+    .logo {
+        width: 3rem;
+        height: 3rem;
+    }
 
-@media screen and (max-width: 550px) {}
+    .logo-header {
+        font-size: 1.6rem;
+    }
+
+    .menu__lista {
+        font-size: 1.6rem;
+    }
+
+    /* MAIN */
+    .image-space {
+        width: 100%;
+    }
+
+    .pres-title {
+        font-size: 3rem;
+    }
+
+    .pres-subtitle {
+        font-size: 2.3rem;
+    }
+
+    /* PROYECTOS */
+    .link-project,
+    .link-project img {
+        width: 60%;
+    }
+
+    .project-title {
+        font-size: 2.8rem;
+    }
+
+    .project-des {
+        font-size: 1.4rem;
+    }
+
+    /* ABOUT ME */
+    .aboutme-container {
+        overflow: visible;
+    }
+
+    .aboutme-photo img {
+        transform: scale(2.75);
+        left: 5rem;
+    }
+
+    .aboutme-separator {
+        width: 70%;
+    }
+
+    .aboutme-pres,
+    .aboutme-data>section {
+        transform: scale(0.80);
+    }
+
+    .aboutme-info>article {
+        position: relative;
+        left: 4rem;
+    }
+
+    /* CONTACTO */
+    /* FOOTER */
+    .footer-general>a{
+        font-size: 1.6rem;
+    }
+    .footer-items>a{
+        font-size: 1.4rem;
+    }
+
+}
+
+@media screen and (max-width: 1505px) {
+    .title{
+        font-size: 2.4rem;
+    }
+    /* HEADER */
+    .logo {
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+
+    .logo-header {
+        font-size: 1.6rem;
+    }
+
+    .menu__lista {
+        font-size: 1.4rem;
+    }
+
+    /* MAIN */
+    .image-space {
+        width: 100%;
+    }
+
+    .pres-title {
+        font-size: 3rem;
+        text-wrap: balance;
+    }
+
+    .pres-subtitle {
+        font-size: 2.3rem;
+    }
+
+    /* PROYECTOS */
+    .projects-p{
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    .carousel-container{
+        width: 100%;
+    }
+
+    /* ABOUT ME */
+    .aboutme-container {
+        overflow: visible;
+    }
+
+    .aboutme-photo img {
+        transform: scale(1.75);
+        left: 5rem;
+    }
+
+    .aboutme-separator {
+        width: 70%;
+    }
+
+    .aboutme-pres,
+    .aboutme-data>section {
+        transform: scale(0.80);
+    }
+
+    .aboutme-info>article {
+        position: relative;
+        left: 5rem;
+    }
+
+    /* CONTACTO */
+
+    /* FOOTER */
+    .footer-general>a{
+        font-size: 1.4rem;
+    }
+    .footer-items>a{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1332px) {
+    .title{
+        font-size: 2rem;
+    }
+    /* HEADER */
+    .logo {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    .logo-header {
+        font-size: 1.4rem;
+    }
+
+    .menu__lista {
+        font-size: 1.2rem;
+    }
+
+    /* MAIN */
+    .image-space {
+        width: 100%;
+    }
+
+    .pres-title {
+        font-size: 2.5rem;
+        text-wrap: balance;
+    }
+
+    .pres-subtitle {
+        font-size: 1.9rem;
+    }
+    .description{
+        font-size: 1.4rem;
+    }
+    .presentation-container>*{
+        position: relative;
+        top: -4rem;
+    }
+
+    /* PROYECTOS */
+    .projects-p{
+        font-size: 1.4rem;
+        font-weight: 500;
+        top: 1rem;
+    }
+    .carousel-container{
+        width: 100%;
+
+        padding: 0;
+    }
+
+    /* ABOUT ME */
+    .aboutme-container {
+        overflow: visible;
+    }
+
+    .aboutme-photo img {
+        transform: scale(1.75);
+        left: 5rem;
+    }
+
+    .aboutme-separator {
+        width: 70%;
+    }
+
+    .aboutme-pres,
+    .aboutme-data>section {
+        transform: scale(0.80);
+    }
+
+    .aboutme-info>article {
+        position: relative;
+        left: 5rem;
+    }
+
+    /* CONTACTO */
+    .contact-form{
+        width: 65%;
+        padding: 1rem;
+    }
+
+    /* FOOTER */
+    .footer .link-logo{
+        font-size: 1.5rem;
+    }
+    .footer-general>a{
+        font-size: 1.2rem;
+    }
+    .footer-items>a{
+        font-size: 1.1rem;
+    }
+    .footer .logo{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {}
+
+@media screen and (max-width: 500px) {}
