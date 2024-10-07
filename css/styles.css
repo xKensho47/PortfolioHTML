@@ -23,7 +23,8 @@
     --color-principalT: #0099cc85;
     --color-secundario: #2d314d;
     --color-secundarioT: #2d314d85;
-    --color-black: rgba(0, 0, 0, 0.5);
+    --color-black: rgb(0, 0, 0);
+    --color-blackT: rgba(0, 0, 0, 0.5);
 
 
     scroll-behavior: smooth;
@@ -326,7 +327,142 @@ p.description {
 
 /* ---------------------------------------------------------------------- */
 /* POYECTOS */
+.main-projects{
+    flex-direction: column;
+}
+.projects-container{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
+    top: 0;
+}
+.projects-p{
+    width: 100%;
+
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 2rem;
+
+    padding: 1rem 0;
+}
+.carousel-section{
+    width: 100%;
+    height: 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.carousel-container{
+    width: 95%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* position: relative; */
+
+    overflow: hidden;
+
+    padding: 8px 0;
+}
+.carousel-container>button{
+    width: 7vw;
+    height: 7vw;
+
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    background-color: var(--color-transparent);
+    color: var(--color-secundario);
+    font-size: 6rem;
+    border: none;
+
+    cursor: pointer;
+}
+.prev{
+    left: 15vw;
+}
+.next{
+    right: 15vw;
+}
+
+.carousel{
+    width: 90%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projects-p, .carousel-section{
+    position: relative;
+    top: 2rem;
+}
+
+/* Contenido del carousel--------- */
+.carousel>.carousel-item {
+    width: 100%;
+    height: 100%;
+    
+    background-color: var(--color-background);
+    text-align: center;
+
+    overflow: hidden;
+
+    /* Oculta todos los items por defecto */
+    display: none;
+}
+.project-title{
+    font-size: 3rem;
+    color: var(--color-secundario);
+}
+.carousel-item>.link-project{
+    width: 50%;
+    height: 100%;
+
+    border-radius: 50px;
+
+    overflow: hidden;
+}
+.link-project img{
+    width: 50%;
+    height: calc((100% / 11) * 8);
+
+    background-color: var(--color-black);
+    border-radius: 15px;
+
+    object-fit: contain;
+
+    transition: all ease-in-out 0.3s;
+}
+.link-project img:hover{
+    transform: scale(1.02);
+
+    transition: all ease-in-out 0.3s;
+}
+.project-des{
+    font-size: 1.6rem;
+    color: var(--color-principal);
+}
+.carousel-item>.project-title,
+.carousel-item>.project-des{
+    height: calc((100%/11 * 1));
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-item>*{
+    position: relative;
+    top: 1rem;
+}
 /* ---------------------------------------------------------------------- */
 /* ABOUT ME */
 .main-aboutme {
