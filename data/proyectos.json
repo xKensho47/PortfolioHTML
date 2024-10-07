@@ -5,7 +5,7 @@
         "link": "https://xkensho47.github.io/ProyectoLaboIII/",
         "link_github": "https://github.com/xKensho47/ProyectoLaboIII",
         "img": "ArcaneProject.webp",
-        "descripcion": "Proyecto individual, realizado con HTML, CSS y Javascript para Laboratorio III."
+        "desc": "Proyecto individual, realizado con HTML, CSS y Javascript para Laboratorio III."
     },
     {
         "id_proyecto": 2,
@@ -13,7 +13,7 @@
         "link": "",
         "link_github": "https://github.com/xKensho47/Moviely",
         "img": "MovielyProject.webp",
-        "descripcion": "Descripción del proyecto 2"
+        "desc": "Proyecto grupal, realizado con HTML, CSS, JavaScript, PHP y MySQL para Práctica Profesional."
     },
     {
         "id_proyecto": 3,
@@ -21,6 +21,6 @@
         "link": "",
         "link_github": "https://github.com/xKensho47/CProyectoMS",
         "img": "CineflowProject.webp",
-        "descripcion": "Proyecto grupal, realizado con HTML, CSS, JavaScript, PHP y MySQL para Metodología en Sistemas I."
+        "desc": "Proyecto grupal, realizado con HTML, CSS, JavaScript, PHP y MySQL para Metodología en Sistemas I."
     }
 ]

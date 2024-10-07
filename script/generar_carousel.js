@@ -1,6 +1,6 @@
 async function loadProjects() {
     try {
-        const response = await fetch('../controller/data/proyectos.json');
+        const response = await fetch('../data/proyectos.json');
         if (!response.ok) throw new Error('Error al cargar los proyectos');
 
         const proyectos = await response.json();
@@ -16,15 +16,15 @@ function generateCarousel(proyectos) {
     proyectos.forEach(proyecto => {
         const carouselItem = `
             <div class="carousel-item">
-                <h3>${proyecto.titulo}
+                <h2>${proyecto.titulo}
                     <a href="${proyecto.link_github}" target="_BLANK">
                         <i class="fa-brands fa-github fa-beat" style="color: #2d314d;"></i>
                     </a>
-                </h3>
-                <a href="${proyecto.link}" target="_BLANK">
+                </h2>
+                <a class="link_project" href="${proyecto.link}" target="_BLANK">
                     <img src="../images/projects/${proyecto.img}" alt="Imagen del proyecto">
                 </a>
-                <p>${proyecto.descripcion}</p>
+                <p class="p-description">${proyecto.desc}</p>
             </div>
         `;
 
