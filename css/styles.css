@@ -1026,14 +1026,14 @@ button[type="submit"] {
 /* RESPONSIVE */
 @media screen and (max-width: 1920px) {
     html {
-        min-width: 100vw;
+        max-width: 100vw;
+        min-width: 90vw;
 
         margin: 0 auto;
     }
 
     .main {
-        max-height: 1920px;
-        min-height: 92.5vh;
+        min-height: 100vh;
     }
 
     .title {
@@ -1452,14 +1452,14 @@ button[type="submit"] {
 
 @media screen and (max-width: 1680px) {
     html {
-        min-width: 100vw;
+        max-width: 100vw;
+        min-width: 90vw;
 
         margin: 0 auto;
     }
 
     .main {
-        max-height: 1680px;
-        min-height: 92.5vh;
+        min-height: 100vh;
     }
 
     .title {
@@ -1878,14 +1878,14 @@ button[type="submit"] {
 
 @media screen and (max-width: 1505px) {
     html {
-        min-width: 100vw;
+        max-width: 100vw;
+        min-width: 90vw;
 
         margin: 0 auto;
     }
 
     .main {
-        max-height: 1505px;
-        min-height: 92.5vh;
+        min-height: 100vh;
     }
 
     .title {
@@ -2296,14 +2296,14 @@ button[type="submit"] {
 
 @media screen and (max-width: 1152px) {
     html {
-        min-width: 100vw;
+        max-width: 100vw;
+        min-width: 90vw;
 
         margin: 0 auto;
     }
 
     .main {
-        max-height: 1152px;
-        min-height: 92.5vh;
+        min-height: 100vh;
     }
 
     .title {
@@ -2793,8 +2793,7 @@ button[type="submit"] {
     }
 
     .main {
-        max-height: 768px;
-        min-height: 92.5vh;
+        min-height: 100vh;
     }
 
     .title {
