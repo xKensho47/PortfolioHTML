@@ -432,6 +432,10 @@ abbr[title] {
     font-size: 3rem;
     color: var(--color-secundario);
 }
+.project-title a{
+    text-decoration: none;
+    color: var(--color-secundario);
+}
 
 .carousel-item>.link-project {
     width: 50%;
