@@ -81,7 +81,29 @@
     <footer class="footer" id="footer-template"></footer>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            loadHeader();
+            loadHeader().then(() => {
+                const menu = document.querySelector("#menu");
+                const abrir = document.querySelector("#abrir");
+                const cerrar = document.querySelector("#cerrar");
+
+                abrir.addEventListener("click", () => {
+                    menu.classList.add("visible");
+                });
+                cerrar.addEventListener("click", () => {
+                    menu.classList.remove("visible");
+                });
+
+                // Cerrar el menú cuando se haga clic fuera de él
+                document.addEventListener("click", (event) => {
+                    const target = event.target;
+
+                    // Si el clic es fuera del menú y no en el botón de abrir
+                    if (!menu.contains(target) && !abrir.contains(target)) {
+                        menu.classList.remove("visible");
+                    }
+                });
+            });
+
             loadFooter();
         });
     </script>

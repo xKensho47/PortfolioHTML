@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="script/cargar_templates.js" defer></script>
 </head>
+
 <body>
     <div class="container">
         <header class="header" id="header-template"></header>
         <main class="main-principal">
-            <section class="section-container">
+            <section class="section-container main-section">
                 <aside class="image-space">
                     <div class="img-container">
                         <img class="decoration" src="images/profile.png" alt="Profile photo">
@@ -26,7 +29,8 @@
                             <p class="pres-subtitle">Técnico Universitario en Programación</p>
                         </div>
                         <div class="pres-box desc-box">
-                            <p class="description">Te doy la bienvenida a mi portfolio personal, en donde podrás ver y conocer un poco más acerca de mí.</p>
+                            <p class="description">Te doy la bienvenida a mi portfolio personal, en donde podrás ver y
+                                conocer un poco más acerca de mí.</p>
                         </div>
                     </article>
                 </aside>
@@ -36,9 +40,32 @@
     <footer class="footer" id="footer-template"></footer>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            loadHeader();
+            loadHeader().then(() => {
+                const menu = document.querySelector("#menu");
+                const abrir = document.querySelector("#abrir");
+                const cerrar = document.querySelector("#cerrar");
+
+                abrir.addEventListener("click", () => {
+                    menu.classList.add("visible");
+                });
+                cerrar.addEventListener("click", () => {
+                    menu.classList.remove("visible");
+                });
+
+                // Cerrar el menú cuando se haga clic fuera de él
+                document.addEventListener("click", (event) => {
+                    const target = event.target;
+
+                    // Si el clic es fuera del menú y no en el botón de abrir
+                    if (!menu.contains(target) && !abrir.contains(target)) {
+                        menu.classList.remove("visible");
+                    }
+                });
+            });
+
             loadFooter();
         });
     </script>
 </body>
+
 </html>

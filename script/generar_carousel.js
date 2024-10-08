@@ -18,7 +18,7 @@ function generateCarousel(proyectos) {
             <div class="carousel-item">
                 <h2 class="project-title">${proyecto.titulo}
                     <a href="${proyecto.link_github}" target="_BLANK">
-                        <i class="fa-brands fa-github fa-beat" style="color: #2d314d;"></i>
+                        <i class="fa-brands fa-github fa-beat" style="color: #2d314d;"></i>>
                     </a>
                 </h2>
                 <a class="link-project" href="${proyecto.link}" target="_BLANK">
