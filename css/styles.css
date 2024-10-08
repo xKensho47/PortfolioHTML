@@ -243,9 +243,9 @@ body {
 }
 
 .img-container img {
-    width: 100%;
+    width: 90%;
 
-    object-fit: cover;
+    object-fit: contain;
 }
 
 /* Aside texto */
@@ -420,7 +420,6 @@ abbr[title] {
     width: 100%;
     height: 100%;
 
-    background-color: var(--color-background);
     text-align: center;
 
     overflow: hidden;
@@ -1437,6 +1436,9 @@ button[type="submit"] {
 }
 
 @media screen and (max-width: 768px) {
+    html{
+        max-width: 768px;
+    }
     .title {
         font-size: 1.8rem;
     }
@@ -1626,7 +1628,7 @@ button[type="submit"] {
         padding: 0;
         overflow: visible;
     }
-
+    
     .carousel-item>.project-title {
         font-size: 2.6rem;
     }
@@ -1652,7 +1654,10 @@ button[type="submit"] {
     }
 
     .carousel>.carousel-item {
-        height: 85vh;
+        max-height: 85vh;
+        
+        position: relative;
+        top: -2.5vh;
     }
 
 
