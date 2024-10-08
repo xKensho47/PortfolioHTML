@@ -2792,7 +2792,7 @@ button[type="submit"] {
     }
 
     .main {
-        max-height: 1024px;
+        max-height: 768px;
         min-height: 92.5vh;
     }
 
