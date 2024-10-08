@@ -1016,6 +1016,11 @@ button[type="submit"] {
 
     text-align: center;
     width: 100%;
+
+    font-size: 1.2rem;
+
+    position: absolute;
+    bottom: -24.5vh;
 }
 
 /* RESPONSIVE */
@@ -1437,6 +1442,12 @@ button[type="submit"] {
         max-width: 7.5rem;
         max-height: 7.5rem;
     }
+
+    .portfolio-copyright {
+        font-size: 1rem;
+
+        bottom: -24.5vh;
+    }
 }
 
 @media screen and (max-width: 1680px) {
@@ -1857,6 +1868,11 @@ button[type="submit"] {
         max-width: 6rem;
         max-height: 6rem;
     }
+    .portfolio-copyright {
+        font-size: 1rem;
+
+        bottom: -24.5vh;
+    }
 
 }
 
@@ -2270,6 +2286,11 @@ button[type="submit"] {
     .social-logo {
         max-width: 5rem;
         max-height: 5rem;
+    }
+    .portfolio-copyright {
+        font-size: 1rem;
+
+        bottom: -24.5vh;
     }
 }
 
@@ -2736,25 +2757,30 @@ button[type="submit"] {
 
     /* FOOTER */
     .footer .link-logo {
-        font-size: 1.3rem;
+        font-size: 1.75rem;
     }
 
     .footer-general>a {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     .footer-items>a {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     .footer .logo {
-        width: 2.2rem;
-        height: 2.2rem;
+        width: 2.6rem;
+        height: 2.6rem;
     }
 
     .social-logo {
-        max-width: 4rem;
-        max-height: 4rem;
+        max-width: 5rem;
+        max-height: 5rem;
+    }
+    .portfolio-copyright {
+        font-size: 1rem;
+
+        bottom: -24.5vh;
     }
 }
 
