@@ -1025,7 +1025,429 @@ button[type="submit"] {
 
 /* RESPONSIVE */
 @media screen and (max-width: 1920px) {
-    
+    html {
+        max-width: 100vw;
+        min-width: 90vw;
+
+        margin: 0 auto;
+    }
+
+    .main {
+        min-height: 100vh;
+    }
+
+    .title {
+        font-size: 2.6rem;
+    }
+
+    /* HEADER */
+    .header {
+        max-width: 100vw;
+    }
+
+    .logo {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .logo-header {
+        width: 100%;
+        justify-content: start;
+
+        font-size: 2rem;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .menu__lista {
+        justify-content: center;
+        text-wrap: nowrap;
+        font-size: 2rem;
+        gap: 7rem;
+    }
+
+    /* MAIN */
+    .image-space {
+        width: 100%;
+    }
+
+    .main-container {
+        width: 100%;
+        max-height: 90%;
+
+        position: relative;
+        top: 7.5vh;
+    }
+
+    .main-container>aside {
+        width: 100%;
+        height: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-container {}
+
+    .img-container img {
+        height: 180%;
+
+        position: relative;
+        top: 15vh;
+        left: -20vw;
+
+        object-fit: contain;
+    }
+
+    .presentation {}
+
+    .pres-box>.pres-title {
+        font-size: 3.5rem;
+        text-wrap: balance;
+    }
+
+    .pres-subtitle {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    .description {
+        font-size: 2rem;
+    }
+
+    .pres-title,
+    .pres-subtitle,
+    p.description {
+        max-width: 60%;
+
+        top: -15vh;
+        left: 20vw;
+
+        transform: none;
+    }
+
+    .main-container>* {
+        position: relative;
+        top: 5rem;
+    }
+
+    /* PROYECTOS */
+    .projects-container {
+        width: 100%;
+    }
+
+    .projects-p {
+        max-width: 90vw;
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-wrap: balance;
+        top: 0.5rem;
+    }
+
+    .carousel-container {
+        width: 100%;
+        min-height: 80vh;
+
+        position: relative;
+        top: 2rem;
+
+        overflow: visible;
+    }
+
+    .carousel-item>.project-title {
+        font-size: 3rem;
+    }
+
+    .carousel-item>.project-title>a {
+        text-decoration: none;
+        font-size: 2.8rem;
+    }
+
+    .carousel-item>.link-project,
+    .link-project>img {
+        width: 55%;
+        min-height: 80%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .carousel-item>p {
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-wrap: balance;
+    }
+
+    .carousel>.carousel-item {
+        max-height: 85vh;
+
+        position: relative;
+        top: -2.5vh;
+    }
+
+    .carousel-container>button {
+        top: 50%;
+    }
+
+    .prev {
+        left: 15rem;
+    }
+
+    .next {
+        right: 15rem;
+    }
+
+    /* ABOUT ME */
+    .main-aboutme {
+        width: 100%;
+        max-height: 100vh;
+
+        position: relative;
+        top: 7.5vh;
+    }
+
+    .aboutme-container {
+        flex-direction: row;
+
+        align-items: center;
+    }
+
+    .aboutme-container>aside {
+        height: 70%;
+        top: 0;
+        left: 0;
+        padding: 0;
+    }
+
+    .aboutme-photo {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .aboutme-photo img {
+        max-width: 100%;
+        max-height: 100%;
+        left: 0;
+
+        transform: none;
+    }
+
+    .aboutme-separator {
+        width: 100%;
+        left: -5rem;
+    }
+
+    .aboutme-info {
+        padding: 0;
+    }
+
+    .aboutme-info>article {
+        width: 100%;
+        min-height: 50%;
+        transform: none;
+        padding: 0;
+        left: -5rem;
+    }
+
+    .aboutme-pres {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aboutme-info>.aboutme-pres>h2 {
+        height: 20%;
+        font-size: 2rem;
+        align-items: center;
+    }
+
+    .aboutme-info>.aboutme-pres>p {
+        height: 80%;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+        padding-left: 4%;
+    }
+
+    .aboutme-info h2,
+    .aboutme-info p {
+        position: relative;
+        /* top: 2rem; */
+    }
+
+    .aboutme-data>section {
+        width: 100%;
+        height: 100%;
+
+        transform: none;
+    }
+
+    .data-personal {
+        width: 100%;
+        height: 100%;
+    }
+
+    .aboutme-data .info-list {
+        padding-left: 5%;
+
+    }
+
+    .info-list .info-item {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    .info-item img {
+        height: 1.6rem;
+    }
+
+    .download-button {
+        width: 14rem;
+        height: 3.5rem;
+
+        font-size: 1.3rem;
+        font-weight: 500;
+
+        /* left: 8rem; */
+    }
+
+    .right,
+    .left {
+        font-size: 6rem;
+        right: -10rem;
+        top: 50%;
+    }
+
+    .techs-title {
+        font-size: 1.8rem;
+    }
+
+    .techs .techs-container {
+        width: 100%;
+        height: 90%;
+
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .techs-container>div {
+        max-width: 8rem;
+        min-width: 5rem;
+        max-height: 8rem;
+        min-height: 5rem;
+    }
+
+    .aboutme-photo>*,
+    .aboutme-info>* {
+        position: relative;
+        top: 0;
+    }
+
+    /* CONTACTO */
+    .main-contact {
+        width: 100%;
+        max-height: 100vh;
+
+        position: relative;
+        top: 7.5vh;
+    }
+
+    .contact-form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-width: 55%;
+        max-width: 70%;
+        max-height: 80vh;
+        padding: 0 4rem 0 4rem;
+    }
+
+    .form-group {
+        height: 7rem;
+        gap: .5rem;
+    }
+
+    .form-group label,
+    .form-group input {
+        font-size: 1.4rem;
+    }
+
+    .contact-form button {
+        position: relative;
+        left: 45%;
+        transform: translateX(-100%);
+
+        font-size: 1.3rem;
+    }
+
+    .name-fields>input[type="text"],
+    .form-group>input[type="text"],
+    .form-group>input[type="email"],
+    .form-group>input[type="tel"],
+    .form-group>textarea {
+        border: solid var(--color-principal) 1px;
+    }
+
+    button[type="submit"] {
+        width: 45%;
+        height: 3rem;
+
+        top: 1.2rem;
+    }
+
+    .contact-form>button {
+        height: 3.5rem;
+
+        top: 1rem;
+        margin: 1rem auto;
+        background-color: var(--color-principal);
+        color: var(--color-background);
+        border: none;
+        border-radius: 15px;
+        font-size: 1.6rem;
+        font-weight: bold;
+
+        padding: 1rem;
+
+        cursor: pointer;
+    }
+
+    /* FOOTER */
+    .footer .link-logo {
+        font-size: 2rem;
+    }
+
+    .footer-general>a {
+        font-size: 1.8rem;
+    }
+
+    .footer-items>a {
+        font-size: 1.4rem;
+    }
+
+    .footer .logo {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .social-logo {
+        max-width: 7.5rem;
+        max-height: 7.5rem;
+    }
+
+    .portfolio-copyright {
+        font-size: 1rem;
+
+        bottom: -24.5vh;
+    }
 }
 
 @media screen and (max-width: 1680px) {
