@@ -2495,6 +2495,7 @@ button[type="submit"] {
     .img-container {}
 
     .img-container img {
+        width: 60%;
         position: relative;
         top: 0;
         left: 0;
@@ -2537,6 +2538,7 @@ button[type="submit"] {
     /* PROYECTOS */
     .projects-container {
         width: 100%;
+        top: -2rem;
     }
 
     .projects-p {
@@ -2603,11 +2605,10 @@ button[type="submit"] {
     /* ABOUT ME */
     .main-aboutme {
         width: 100%;
-        max-height: 100vh;
+        min-height: 85vh;
 
         position: relative;
-        top: 7.5vh;
-    }
+        top: 7.5vh;    }
 
     .aboutme-container {
         flex-direction: column;
@@ -2621,14 +2622,14 @@ button[type="submit"] {
     }
 
     .aboutme-photo {
-        max-width: 100%;
+        max-width: 90%;
         max-height: 40vh;
         overflow: hidden;
     }
 
     .aboutme-photo img {
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 25%;
+        max-height: 90%;
         left: 0;
         top: 4vh;
         /* object-fit: scale-down; */
@@ -2637,7 +2638,7 @@ button[type="submit"] {
     }
 
     .aboutme-separator {
-        width: 85%;
+        width: 95%;
         left: 0;
     }
 
@@ -2726,7 +2727,7 @@ button[type="submit"] {
     }
 
     .techs .techs-container {
-        width: 100%;
+        width: 85%;
         height: 90%;
 
         display: grid;
@@ -2764,7 +2765,7 @@ button[type="submit"] {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        min-width: 90%;
+        min-width: 80%;
         max-width: 95%;
         max-height: 80vh;
         padding: 0;
@@ -2817,15 +2818,11 @@ button[type="submit"] {
 
     /* FOOTER */
     .footer .link-logo {
-        font-size: 1.75rem;
+        font-size: 1.6rem;
     }
 
-    .footer-general>a {
-        font-size: 1rem;
-    }
-
-    .footer-items {
-        font-size: 0.8rem;
+    .footer-general a {
+        font-size: 1.2rem;
     }
     .social-media-logos {
         display: flex;
@@ -3003,7 +3000,7 @@ button[type="submit"] {
     }
 
     .img-container>.decoration {
-        width: 100%;
+        width: 75%;
         height: 100%;
 
         top: -4rem;
@@ -3206,7 +3203,7 @@ button[type="submit"] {
         justify-content: center;
     }
     .aboutme-photo img{
-        width: 45%;
+        max-width: 45%;
         height: 80%;
         top: 0;
         left: 0;
