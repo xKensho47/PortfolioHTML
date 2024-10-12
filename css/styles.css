@@ -98,6 +98,7 @@ body {
     gap: 1rem;
 
     height: inherit;
+    width: min-content;
 }
 
 .logo {
@@ -111,7 +112,7 @@ body {
     justify-content: center;
 
     height: inherit;
-    width: 70%;
+    width: 50%;
 }
 
 .menu__lista {
@@ -1050,14 +1051,15 @@ button[type="submit"] {
     }
 
     .logo-header {
-        width: 100%;
+        width: min-content;
         justify-content: start;
 
         font-size: 2rem;
+        text-wrap: nowrap;
     }
 
     .menu {
-        width: 100%;
+        width: 50%;
     }
 
     .menu__lista {
@@ -1493,14 +1495,11 @@ button[type="submit"] {
     }
 
     .logo-header {
-        width: 100%;
-        justify-content: start;
-
         font-size: 1.8rem;
     }
 
     .menu {
-        width: 100%;
+
     }
 
     .menu__lista {
@@ -1936,14 +1935,15 @@ button[type="submit"] {
     }
 
     .logo-header {
-        width: 100%;
+        width: min-content;
         justify-content: start;
+        text-wrap: nowrap;
 
         font-size: 1.4rem;
     }
 
     .menu {
-        width: 100%;
+        width: 50%;
     }
 
     .menu__lista {
