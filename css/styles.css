@@ -3403,7 +3403,7 @@ button[type="submit"] {
 
     /* FOOTER */
     .footer {
-        height: 40vh;
+        height:fit-content;
     }
     .footer-nav{
         width: 90%;
@@ -4066,7 +4066,7 @@ button[type="submit"] {
 
     /* FOOTER */
     .footer {
-        height: 40vh;
+        height:fit-content;
     }
     .footer-nav{
         width: 90%;
@@ -4748,7 +4748,7 @@ button[type="submit"] {
 
     /* FOOTER */
     .footer {
-        height: 40vh;
+        height:fit-content;
     }
     .footer-nav{
         width: 90%;
